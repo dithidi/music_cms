@@ -1,0 +1,22 @@
+@mixin reset {
+  a {
+    color: #FFFFFF;
+    transition: color 500ms;
+    text-decoration: none;
+
+    &:active, &:hover, &:visited, &:focus {
+      color: #FFFFFF;
+    }
+  }
+
+  .glyphicon-plus {
+    margin-right: 3px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+@include reset;

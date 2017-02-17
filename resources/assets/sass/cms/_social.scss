@@ -1,0 +1,28 @@
+.social-admin {
+    &__item {
+        border: #ccc 1px solid;
+        border-radius: 5px;
+        float: left;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 49%;
+
+        &:nth-child(odd) {
+            clear: both;
+            margin-right: 2%;
+        }
+    }
+
+    .social-form {
+        &__social-title {
+            font-size: 2.0rem;
+            text-transform: capitalize;
+        }
+
+        &__facebook {
+            &:before {
+                content: ' ';
+            }
+        }
+    }
+}

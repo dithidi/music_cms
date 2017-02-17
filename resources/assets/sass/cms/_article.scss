@@ -1,0 +1,24 @@
+.article-admin {
+    &__search-wrapper {
+      margin: 10px 0;
+      max-width: 400px;
+    }
+
+    &__breadcrumb {
+      display: block;
+      margin: 10px 0;
+    }
+
+    &__create,
+    &__breadcrumb {
+      color: $cms-color-link;
+
+      &:hover {
+        color: $cms-color-link-hover;
+      }
+    }
+
+    .article-form {
+        max-width: 800px;
+    }
+}

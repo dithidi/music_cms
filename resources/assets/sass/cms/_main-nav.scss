@@ -1,0 +1,50 @@
+.main-nav {
+    background-color: $cms-color-primary;
+    flex: 200px 0 0;
+    overflow-y: auto;
+
+    &__site-title {
+        color: $cms-color-white;
+        font-size: 3.0rem;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__highlight {
+        color: lighten($cms-color-primary, 15);
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        border-bottom: 1px solid lighten($cms-color-primary, 15);
+
+        &:first-child {
+            border-top: 1px solid lighten($cms-color-primary, 15);
+        }
+    }
+
+    &__link {
+        background-color: $cms-color-primary;
+        color: $cms-color-white;
+        display: block;
+        padding: 10px;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        transition: 250ms;
+
+        &:hover {
+            background-color: lighten($cms-color-primary, 10);
+            color: $cms-color-white;
+        }
+
+        &.active {
+            background-color: lighten($cms-color-primary, 5);
+            pointer-events: none;
+        }
+    }
+}
